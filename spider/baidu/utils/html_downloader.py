@@ -13,5 +13,4 @@ class HtmlDownloader(object):
         if res.getcode() != 200:
             return None
         cont = res.read().decode('utf-8')
-        # print('解析出的网页内容\n{}'.format(cont))
         return cont
