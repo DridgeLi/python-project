@@ -1,6 +1,6 @@
 import os
 
-from decorator.log import log
+from spider.baidu.decorator.log import log
 
 
 class HtmlOutPuter(object):

@@ -3,7 +3,7 @@ from urllib import parse
 
 from bs4 import BeautifulSoup
 
-from decorator.log import log
+from spider.baidu.decorator.log import log
 
 
 class HtmlParser(object):

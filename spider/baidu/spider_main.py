@@ -1,9 +1,7 @@
-import sys
-
-import utils.url_manager as url_manager
-import utils.html_parser as html_parser
-import utils.html_downloader as html_downloader
-import utils.html_outputer as html_outputer
+import spider.baidu.myUtils.url_manager as url_manager
+import spider.baidu.myUtils.html_parser as html_parser
+import spider.baidu.myUtils.html_downloader as html_downloader
+import spider.baidu.myUtils.html_outputer as html_outputer
 
 
 class SpiderMain(object):
