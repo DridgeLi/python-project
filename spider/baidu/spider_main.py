@@ -36,7 +36,7 @@ class SpiderMain(object):
 
 
 if __name__ == '__main__':
-    print("开始运行")
+    print("开始运行---")
     root_url = 'https://baike.baidu.com/item/Python/407313?fr=aladdin'
     obj_spider = SpiderMain()
     obj_spider.craw(root_url)
