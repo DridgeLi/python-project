@@ -1,6 +1,6 @@
 from urllib import request
 
-from spider.baidu.decorator.log import log
+from myDecorator.log import log
 
 
 class HtmlDownloader(object):

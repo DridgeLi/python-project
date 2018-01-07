@@ -1,9 +1,9 @@
 import re
-from urllib import parse
 
 from bs4 import BeautifulSoup
+from urllib import parse
 
-from spider.baidu.decorator.log import log
+from myDecorator.log import log
 
 
 class HtmlParser(object):

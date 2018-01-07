@@ -1,4 +1,4 @@
-from spider.baidu.decorator.log import log
+from myDecorator.log import log
 
 
 class UrlManager(object):
