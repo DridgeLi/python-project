@@ -6,11 +6,12 @@ from myDecorator.log import log
 class HtmlDownloader(object):
     @log
     def download(self, url):
-        new_url = url
-        if new_url is None:
+        if url is None:
             return None
-        res = request.urlopen(str(new_url.encode('utf-8'))[2:])
+        print(url)
+        res = request.urlopen(url)
         if res.getcode() != 200:
             return None
         cont = res.read().decode('utf-8')
+        print(cont)
         return cont

@@ -30,7 +30,7 @@ class SpiderMain(object):
             self.urls.add_new_urls(new_urls)
             # 将解析到的数据输出
             self.outputer.collect_data(new_data)
-            if count == 1000:
+            if count == 10:
                 break
             count += 1
         self.outputer.output_html()

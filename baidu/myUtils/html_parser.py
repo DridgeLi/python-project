@@ -1,5 +1,5 @@
 import re
-
+import chardet
 from bs4 import BeautifulSoup
 from urllib import parse
 
@@ -21,8 +21,9 @@ class HtmlParser(object):
         new_urls = set()
         a = soup.find_all('a', href=re.compile(r'/item/'))
         for i in a:
-            print(i['href'])
-            new_full_url = parse.urljoin(url, i['href'])
+            surfix = i['href']
+            new_full_url = parse.urljoin(url, surfix)
+            print(new_full_url)
             new_urls.add(new_full_url)
         return new_urls
 
